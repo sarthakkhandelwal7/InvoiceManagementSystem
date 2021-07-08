@@ -13,7 +13,7 @@ body {
     left: 843px;
     width: 235px;
     height: 50px;
-    background: transparent url('img/logo.png') 0% 0% no-repeat padding-box;
+    background: transparent url('imgages/logo.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
 
@@ -256,31 +256,27 @@ a:hover {
     cursor: pointer;
 }
 
-#header_add_window {
-    position: relative;
-    margin-left: 0;
-    width: 1106px;
-    height: 91px;
-}
-
-#header_edit_window {
-    position: relative;
-    margin-left: 0px;
-    width: 543px;
-    height: 91px;
-}
-
+#header_add_window,
+#header_edit_window,
 #header_delete_window {
     position: relative;
-    margin-left: 0px;
-    width: 611px;
-    height: 91px;
+    margin-left: 0;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid #1A262F;
 }
 
 h4 {
     position: relative;
     left: 30px;
     text-align: left;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 20px;
     font: normal normal normal 28px/32px Ubuntu;
     letter-spacing: 0px;
     color: #FFFFFF;
@@ -289,10 +285,13 @@ h4 {
 }
 
 form.add_invoice {
-    display: table;
+    display: inline-flex;
     position: relative;
     margin-left: 30px;
+    padding-top: 28px;
+    height: 300px;
     text-align: left;
+    display: inline-flex;
     font: normal normal normal 20px/24px Ubuntu;
     letter-spacing: 0.19px;
     color: #97A1A9;
@@ -320,23 +319,49 @@ form.edit_invoice {
 #invoice_no,
 #invoice_amount_add,
 #invoice_amount_edit,
-#due_date,
-#notes_add,
-#notes_edit {
+#due_date {
     /* margin-bottom: 20px; */
     background: #283A46 0% 0% no-repeat padding-box;
     border: 1px solid #356680;
     border-radius: 10px;
     opacity: 1;
-}
-
-#customer_name,
-#customer_no,
-#invoice_no,
-#invoice_amount_add,
-#invoice_amount_edit {
     margin-bottom: 28px;
     margin-left: 50px;
     width: 300px;
     height: 45px;
+}
+
+#add_footer,
+#edit_footer,
+#delete_footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: 60px;
+    width: auto;
+    border-top: 1px solid #1A262F;
+}
+
+#notes_add,
+#notes_edit {
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+    margin-bottom: 28px;
+    margin-left: 50px;
+    width: 300px;
+    height: 191px;
+}
+
+a:hover {
+    color: #FFFFFF;
+    background: #14AFF1 0% 0% no-repeat padding-box;
+}
+
+.buttons:hover {
+    border: 1px solid #14AFF1;
+    color: #F4F8FA;
 }

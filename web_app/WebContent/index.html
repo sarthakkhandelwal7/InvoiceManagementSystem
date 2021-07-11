@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta charset="ISO-8859-1">
+    <title>Highradius</title>
+</head>
+
+<body>
+    <img id="ABC_products" src="images/Group 20399.svg" alt="ABC Products">
+    <img id="logo" src="images/logo.svg" alt="logo">
+    <h3 id="heading">Invoice List</h3>
+
+    <div id="container">
+        <div id="tool_bar">
+            <button id="add_btn" class="buttons" style="width: 99px;"><img src="images/Path 18189.svg"> Add</button>
+            <button id="edit_btn" class="buttons" style="width: 102px;"><img src="images/Path 18191.svg"> Edit</button>
+            <button id="delete_btn" class="buttons" style="width: 123px;"><img style="padding-bottom: 6px;" src="images/Path 18189-1.svg"> Delete</button>
+
+            <form class=search_bar>
+                <input id="search" type="text" placeholder="  Search by Invoice Number">
+                <button type="submit"><img src="images/search-24px (3).svg"></button>
+            </form>
+        </div>
+        <div id="add" class="tool_bar_btn">
+
+            <div class="add_btn-content">
+                <header id="header_add_window">
+                    <h4>Add Invoice</h4>
+                    <span class="close">&times;</span>
+
+                </header>
+
+                <form action="#" class="add_invoice">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="labels"><label for="customer_name">Customer Name.</label></td>
+                                <td class="inputs"><input type="text" id="customer_name"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="customer_no">Customer No.</label></td>
+                                <td><input type="text" id="customer_no"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="invoice_no">Invoice No.</label></td>
+                                <td><input type="text" id="invoice_no"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="invoice_amount_add">Invoice Amount.</label></td>
+                                <td><input type="text" id="invoice_amount_add"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <div class="invoice_right_table"> -->
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="labels"><label for="due_date">Due Date.</label></td>
+                                <td class="inputs"><input type="date" id="due_date"></td>
+                            </tr>
+
+                            <tr>
+                                <td><label for="notes_add">Notes</label></td>
+                                <td><input type="text" id="notes_add"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+                <footer id="add_footer">
+                    <button class="buttons clear_btn" style="width:87px;"> Clear </button>
+                    <button onclick="addInvoice()" class="buttons addition_btn" style="width:77px;"> Add </button>
+                </footer>
+
+            </div>
+
+        </div>
+
+        <div id="edit" class="tool_bar_btn">
+            <div class="edit_btn-content">
+                <header id="header_edit_window">
+
+                    <h4>Edit Invoice</h4>
+                    <span class="close">&times;</span>
+                </header>
+
+                <form class="edit_invoice">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td> <label for="invoice_amount_edit">Invoice Amount</label></td>
+                                <td> <input type="text" id="invoice_amount_edit"></td>
+                            </tr>
+                            <tr>
+                                <td> <label for="notes_edit">Notes</label></td>
+                                <td> <input type="text" id="notes_edit"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+
+                <footer id="edit_footer">
+                    <button class="buttons clear_btn" style="width:92px;"> Reset </button>
+                    <button onclick="editInvoice()" class="buttons addition_btn" style="width:82px;"> Save </button>
+                </footer>
+            </div>
+        </div>
+        <div id="delete" class="tool_bar_btn">
+            <div class="delete_btn-content">
+                <header id="header_delete_window">
+                    <h4>Delete record(s)?</h4>
+                    <span class="close">&times;</span>
+
+                </header>
+                <div id="delete_invoice_message">
+                    <p>
+                        You'll lose your record(s) after this action. We can't recover them once you delete.
+                    </p>
+                    <p>Are you sure you wabt to permanently delete them?</p>
+                </div>
+                <footer id="delete_footer">
+                    <button class="buttons clear_btn" style="width:100px;"> Cancel </button>
+                    <button onclick="deleteInvoices()" class="buttons addition_btn" style="width:101px;"> Delete </button>
+                </footer>
+
+            </div>
+        </div>
+        <table id="invoices">
+            <thead>
+                <tr>
+                    <th>
+                        <input type="checkbox" class="check_box">
+                    </th>
+                    <th>Customer Name</th>
+                    <th>Customer #</th>
+                    <th>Invoice</th>
+                    <th>Invoice Amount</th>
+                    <th>Due Date</th>
+                    <th>Predicted Payment Date</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+        </table>
+        <a onclick="getPreviousSet()" class="previous round">&#8249;</a>
+        <a onclick="getNextSet()" class="next round">&#8250;</a>
+    </div>
+
+
+
+
+</body>
+<script src="js/app.js"></script>
+
+</html>

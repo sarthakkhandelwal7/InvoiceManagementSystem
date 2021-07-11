@@ -1,0 +1,367 @@
+body {
+    top: 0px;
+    left: 0px;
+    width: 1920px;
+    height: 1080px;
+    background: transparent radial-gradient(closest-side at 50% 50%, #58687E 0%, #39495E 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#logo {
+    position: absolute;
+    top: 22px;
+    left: 843px;
+    width: 235px;
+    height: 50px;
+    background: transparent url('imgages/logo.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#ABC_products {
+    position: absolute;
+    padding-right: 23%;
+    top: 16px;
+    left: 30px;
+    width: 233px;
+    height: 52px;
+}
+
+#heading {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 141px;
+    height: 31px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font: normal normal normal 28px/32px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+#container {
+    position: absolute;
+    top: 160px;
+    left: 20px;
+    width: 96%;
+    height: 739px;
+    background: #273D49CC 0% 0% no-repeat padding-box;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+#tool_bar {
+    top: 179px;
+    padding-top: 30px;
+    left: 1126px;
+    width: 98%;
+    height: 67px;
+    text-align: right;
+    opacity: 1;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+#check_box {
+    left: 80px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #97A1A9;
+    border-radius: 3px;
+    opacity: 1;
+}
+
+.buttons {
+    top: 190px;
+    left: 1245px;
+    width: 102px;
+    height: 45px;
+    margin-right: 19px;
+    font-size: 20px;
+    border: 1px solid #97A1A9;
+    color: #97A1A9;
+    background-color: #273D49CC;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+form.search_bar button {
+    height: 45px;
+    width: 40px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-left: 1px solid #283A46;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+form.search_bar {
+    display: inline-flex;
+}
+
+form.search_bar input[type=text] {
+    height: 41px;
+    width: 300px;
+    margin-right: -8px;
+    font-size: 20px;
+    background: #283A46 0% 0% no-repeat padding-box;
+    border-left: 1px solid #356680;
+    border-top: 1px solid #356680;
+    border-bottom: 1px solid #356680;
+    border-right: 1px solid #283A46;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+table#invoices {
+    position: absolute;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 95%;
+    color: #FFFFFF;
+    margin-left: 61px;
+}
+
+table#invoices>tbody>tr>td {
+    text-align: left;
+    padding: 15px;
+}
+
+table#invoices>thead>tr>th {
+    text-align: left;
+    padding: 15px;
+    color: #97A1A9;
+    border-bottom: 2px solid #283A46;
+}
+
+table#invoices>tbody>tr:nth-child(even) {
+    background-color: #283A46;
+}
+
+.previous {
+    position: absolute;
+    top: 313px;
+    left: 26px;
+    width: 55px;
+    height: 55px;
+    background: 97A1A9 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000069;
+    opacity: 1;
+}
+
+.next {
+    position: absolute;
+    top: 313px;
+    left: 95%;
+    width: 55px;
+    height: 55px;
+    background: #39495E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 6px #00000069;
+    opacity: 1;
+}
+
+.round {
+    border-radius: 50%;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 4px;
+    font-size: 32px;
+    color: #97A1A9;
+}
+
+a:hover {
+    color: #FFFFFF;
+    background: #14AFF1 0% 0% no-repeat padding-box;
+}
+
+.tool_bar_btn {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.add_btn-content {
+    position: absolute;
+    top: 226px;
+    left: 407px;
+    width: 1106px;
+    height: 509px;
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.edit_btn-content {
+    position: absolute;
+    top: 210px;
+    left: 689px;
+    width: 543px;
+    height: 511px;
+    background: #2A3E4C 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.delete_btn-content {
+    position: absolute;
+    top: 294px;
+    left: 654px;
+    width: 611px;
+    height: 342px;
+    background: #2A3F4D 0% 0% no-repeat padding-box;
+    box-shadow: 0px 8px 24px #00000029;
+    border-radius: 6px;
+    opacity: 1;
+}
+
+.close {
+    position: relative;
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#header_add_window,
+#header_edit_window,
+#header_delete_window {
+    position: relative;
+    margin-left: 0;
+    width: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid #1A262F;
+}
+
+h4 {
+    position: relative;
+    left: 30px;
+    text-align: left;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 20px;
+    font: normal normal normal 28px/32px Ubuntu;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    opacity: 1;
+}
+
+form.add_invoice {
+    display: inline-flex;
+    position: relative;
+    margin-left: 30px;
+    padding-top: 28px;
+    height: 300px;
+    text-align: left;
+    display: inline-flex;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0.19px;
+    color: #97A1A9;
+    opacity: 1;
+}
+
+form.edit_invoice {
+    margin-left: 30px;
+}
+
+#delete_invoice_message {
+    margin-left: 30px;
+    top: 24px;
+    left: 0px;
+    width: 531px;
+    height: 95px;
+    text-align: left;
+    font: normal normal normal 20px/24px Ubuntu;
+    letter-spacing: 0px;
+    color: #C0C6CA
+}
+
+#customer_name,
+#customer_no,
+#invoice_no,
+#invoice_amount_add,
+#invoice_amount_edit,
+#due_date {
+    /* margin-bottom: 20px; */
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+    margin-bottom: 28px;
+    margin-left: 50px;
+    width: 300px;
+    height: 45px;
+}
+
+#add_footer,
+#edit_footer,
+#delete_footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    height: 60px;
+    width: auto;
+    border-top: 1px solid #1A262F;
+}
+
+#notes_add,
+#notes_edit {
+    background: #283A46 0% 0% no-repeat padding-box;
+    border: 1px solid #356680;
+    border-radius: 10px;
+    opacity: 1;
+    margin-bottom: 28px;
+    margin-left: 50px;
+    width: 300px;
+    height: 191px;
+}
+
+a:hover {
+    color: #FFFFFF;
+    background: #14AFF1 0% 0% no-repeat padding-box;
+}
+
+.buttons:hover {
+    border: 1px solid #14AFF1;
+    color: #F4F8FA;
+}
